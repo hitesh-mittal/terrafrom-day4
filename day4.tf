@@ -1,13 +1,6 @@
 terraform {
 
-backend "s3" {
-    bucket = "day-3-terraform"
-    key="state/terraform.tfstate"
-    profile = "mayank"
-    region = "us-east-1"
 
-   
-}
   required_version = "~>1.6.5"
   required_providers {
     aws = {
@@ -18,7 +11,7 @@ backend "s3" {
   }
 }
 provider "aws" {
-  profile = "mayank"
+  
   region = "us-east-1"
 }
 
