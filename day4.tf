@@ -6,7 +6,7 @@ backend "s3" {
     profile = "mayank"
     region = "us-east-1"
 
-    dynamodb_table = "state-lock-table"
+   
 }
   required_version = "~>1.6.5"
   required_providers {
@@ -26,7 +26,7 @@ resource "aws_instance" "day3_instance" {
   ami           = data.aws_ami.amazonlinux.id
   instance_type = "t3.micro"
   key_name = "public"
-count=1
+  count=1
   
         
 
