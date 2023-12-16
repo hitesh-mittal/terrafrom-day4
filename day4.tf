@@ -19,7 +19,7 @@ resource "aws_instance" "day3_instance" {
   ami           = data.aws_ami.amazonlinux.id
   instance_type = "t3.micro"
   key_name = "public"
-  count=1
+  count=2
   
         
 
